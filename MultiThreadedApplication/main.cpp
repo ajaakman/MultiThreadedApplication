@@ -3,7 +3,7 @@
 
 void FirstTask()
 {
-	std::cout << "First Thread Beginning\n" << std::flush;
+	std::cout << "First Thread Beginning\n" << std::flush; // If output buffer isn't flushed the thread keeps working until it's done. If using endl sometimes it doesn't print new line after switching to another thread.
 	for (int i = 0; i < 5; ++i)
 	{
 		std::cout << "First Thread Working\n" << std::flush;
